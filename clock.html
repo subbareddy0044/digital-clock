@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="stylecss.css"/>
+    <style>
+      body{
+margin: 1;
+display: flex;
+font-family:  sans-serif;
+flex-direction: column;
+align-items: center;
+height: 100vh;
+justify-content: center;
+background:"white";
+background-size: cover;
+overflow: hidden;
+background-image: url(https://good-nature-blog-uploads.s3.amazonaws.com/uploads/2022/01/good-nature-homepage-hero_2-scaled.jpg);
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(245, 152, 12);
+}
+.clock{
+    display: flex;
+}
+.cock div {
+    margin: 5px;
+    position: relative;
+}
+.clock span {
+    width: 100px;
+    height: 60px;
+    background: slateblue;
+    opacity: .8;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, blue, 0a);
+}
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: darkblue;
+    opacity: 0.8;
+    background-size: cover;
+}
+.clock #ampm {
+ position: relative;
+ width: 60px;
+ height: 30px;
+ font-size: 20px;
+ background: green;
+ bottom:-60px;
+}
+h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 9px;
+    text-align: center;
+    color: white; 
+}
+    </style>
+  </head>
+  <body>
+    <h2>Digital Clock</h2>
+    <div class="clock">
+      <div>
+        <span id="hour">00</span>
+        <span class="text">Hours</span>
+      </div>
+      <div>
+        <span id="minutes">00</span>
+        <span class="text">Minutes</span>
+      </div>
+      <div>
+        <span id="seconds">00</span>
+        <span class="text">Seconds</span>
+      </div>
+      <div>
+        <span id="ampm">AM</span>
+      </div>
+    </div>
+    <script src="colckjs.js"></script>
+  </body>
+</html>
